@@ -260,18 +260,18 @@
 					<button type="roll" value="/em rolls Awareness with [[(@{awareness} + @{awareness_attr} + ?{Bonuses/Specialization|0} + @{wound-penalty})d10>?{Doubles?|Tens,10|Nines,9|Eights,8|Sevens,7|None,11}f<6s + (@{awareness} + @{awareness_attr} + ?{Bonuses/Specialization|0} + @{wound-penalty})+?{automatic successes|0}]] successes" name="roll_awarenesscheck"></button>
 				</div>
 				<div class="sheet-dot-abilities-rownew1">
-					<input type="checkbox" name="attr_brawlfav" value="1">
-					<span class="ability" data-i18n="brawl-u">Brawl</span>
+					<input type="checkbox" name="attr_Close-Combatfav" value="1">
+					<span class="ability" data-i18n="Close-Combat-u">Close-Combat</span>
 					<div class="radiocontainer2">
-						<input checked="checked" class="radiobox reset" type="radio" name="attr_brawl" value="0" style="border-radius: 50%;">
-						<input class="radiobox" type="radio" name="attr_brawl" value="1" style="border-radius: 50%;">
-						<input class="radiobox" type="radio" name="attr_brawl" value="2" style="border-radius: 50%;">
-						<input class="radiobox" type="radio" name="attr_brawl" value="3" style="border-radius: 50%;">
-						<input class="radiobox" type="radio" name="attr_brawl" value="4" style="border-radius: 50%;">
-						<input class="radiobox" type="radio" name="attr_brawl" value="5" style="border-radius: 50%;">
+						<input checked="checked" class="radiobox reset" type="radio" name="attr_Close-Combat" value="0" style="border-radius: 50%;">
+						<input class="radiobox" type="radio" name="attr_Close-Combat" value="1" style="border-radius: 50%;">
+						<input class="radiobox" type="radio" name="attr_Close-Combat" value="2" style="border-radius: 50%;">
+						<input class="radiobox" type="radio" name="attr_Close-Combat" value="3" style="border-radius: 50%;">
+						<input class="radiobox" type="radio" name="attr_Close-Combat" value="4" style="border-radius: 50%;">
+						<input class="radiobox" type="radio" name="attr_Close-Combat" value="5" style="border-radius: 50%;">
 
 					</div>
-					<select class="sheetselect" name="attr_brawl_attr">
+					<select class="sheetselect" name="attr_Close-Combat_attr">
 					  <option value="@{strength}" data-i18n="strength-u">STR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
@@ -282,7 +282,7 @@
 					  <option value="@{intelligence}"data-i18n="intelligence-u">INT</option>
 					  <option value="@{wits}"data-i18n="wits-u">WIT</option>
 					</select>
-					<button type="roll" value="/em rolls Brawl with [[(@{brawl} + @{brawl_attr} + ?{Bonuses/Specialization|0} + @{wound-penalty})d10>?{Doubles?|Tens,10|Nines,9|Eights,8|Sevens,7|None,11}f<6s + (@{brawl} + @{brawl_attr} + ?{Bonuses/Specialization|0} + @{wound-penalty})+?{automatic successes|0}]] successes" name="roll_brawlcheck"></button>
+					<button type="roll" value="/em rolls Close-Combat with [[(@{Close-Combat} + @{Close-Combat_attr} + ?{Bonuses/Specialization|0} + @{wound-penalty})d10>?{Doubles?|Tens,10|Nines,9|Eights,8|Sevens,7|None,11}f<6s + (@{brawl} + @{brawl_attr} + ?{Bonuses/Specialization|0} + @{wound-penalty})+?{automatic successes|0}]] successes" name="roll_brawlcheck"></button>
 				</div>
 				<div class="sheet-dot-abilities-rownew1">
 					<input type="checkbox" name="attr_bureaucracyfav" value="1">
