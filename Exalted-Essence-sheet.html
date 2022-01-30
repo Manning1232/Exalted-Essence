@@ -58,17 +58,17 @@
 		</div>
 		<div class="sheet-dots-attribute-col">
 			<div class ="sheet-dots-attribute-rownew">
-				<input type="checkbox" class="sheet-attribute-checkbox"name="attr_strengthfav" value="1">
-				<span class="dotattribute" data-i18n="strength-att-u">Strength</span>
+				<input type="checkbox" class="sheet-attribute-checkbox"name="attr_forcefav" value="1">
+				<span class="dotattribute" data-i18n="force-att-u">force</span>
 				<div class="radiocontainer">
-					<input class="radiobox reset" type="radio" name="attr_strength" value="0" style="border-radius: 50%;">
-					<input checked="checked" class="radiobox" type="radio" name="attr_strength" value="1" style="border-radius: 50%;">
-					<input class="radiobox" type="radio" name="attr_strength" value="2" style="border-radius: 50%;">
-					<input class="radiobox" type="radio" name="attr_strength" value="3" style="border-radius: 50%;">
-					<input class="radiobox" type="radio" name="attr_strength" value="4" style="border-radius: 50%;">
-					<input class="radiobox" type="radio" name="attr_strength" value="5" style="border-radius: 50%;">
+					<input class="radiobox reset" type="radio" name="attr_force" value="0" style="border-radius: 50%;">
+					<input checked="checked" class="radiobox" type="radio" name="attr_force" value="1" style="border-radius: 50%;">
+					<input class="radiobox" type="radio" name="attr_force" value="2" style="border-radius: 50%;">
+					<input class="radiobox" type="radio" name="attr_force" value="3" style="border-radius: 50%;">
+					<input class="radiobox" type="radio" name="attr_force" value="4" style="border-radius: 50%;">
+					<input class="radiobox" type="radio" name="attr_force" value="5" style="border-radius: 50%;">
 				</div>
-				<button type="roll" value="/em rolls Strength with [[(@{strength} + ?{Bonuses|0} + @{wound-penalty})d10>?{Doubles?|Tens,10|Nines,9|Eights,8|Sevens,7|None,11}f<6s + (@{strength} + ?{Bonuses|0} + @{wound-penalty})+?{automatic successes|0}]] sucesses" name="roll_strengthcheck"></button>
+				<button type="roll" value="/em rolls Frorce with [[(@{force} + ?{Bonuses|0} + @{wound-penalty})d10>?{Doubles?|Tens,10|Nines,9|Eights,8|Sevens,7|None,11}f<6s + (@{force} + ?{Bonuses|0} + @{wound-penalty})+?{automatic successes|0}]] sucesses" name="roll_forcecheck"></button>
 			</div>
 			<div class ="sheet-dots-attribute-rownew">
 				<input type="checkbox" name="attr_dexterityfav" value="1">
@@ -197,7 +197,7 @@
 						<input class="radiobox" type="radio" name="attr_archery" value="5" style="border-radius: 50%;">
 					</div>
 					<select class="sheetselect" name="attr_arch_attr">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -222,7 +222,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_athletics_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -247,7 +247,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_awareness_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -272,7 +272,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_Close-Combat_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -297,7 +297,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_bureaucracy_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -476,7 +476,7 @@
 					  <option value="@{craft_10}" data-i18n="craft-10-u">CR10</option>
 					</select>
 					<select class="sheetselect" name="attr_craft_attr" style="margin-right: 1px;">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -501,7 +501,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_dodge_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					 <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -526,7 +526,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_integrity_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -550,7 +550,7 @@
 						<input class="radiobox" type="radio" name="attr_investigation" value="5" style="border-radius: 50%;">
 					</div>
 					<select class="sheetselect" name="attr_investigation_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -577,7 +577,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_larceny_attr">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -601,7 +601,7 @@
 						<input class="radiobox" type="radio" name="attr_linguistics" value="5" style="border-radius: 50%;">
 					</div>
 					<select class="sheetselect" name="attr_linguistics_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -626,7 +626,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_lore_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -806,7 +806,7 @@
 					  <option value="@{martial_arts_10}">MA10</option>
 					</select>
 					<select class="sheetselect" name="attr_martial_arts_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -831,7 +831,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_medicine_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -856,7 +856,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_melee_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -881,7 +881,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_occult_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -906,7 +906,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_performance_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -931,7 +931,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_presence_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -958,7 +958,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_resistance_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -983,7 +983,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_ride_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1008,7 +1008,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_sail_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1033,7 +1033,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_socialize_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1058,7 +1058,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_stealth_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1083,7 +1083,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_survival_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1108,7 +1108,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_thrown_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1132,7 +1132,7 @@
 						<input class="radiobox" type="radio" name="attr_war" value="5" style="border-radius: 50%;">
 					</div>
 					<select class="sheetselect" name="attr_war_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1157,7 +1157,7 @@
 
 					</div>
 					<select class="sheetselect" name="attr_extra_attr">
-					  <option value="@{strength}" data-i18n="strength-u">STR</option>
+					  <option value="@{force}" data-i18n="force-u">FOR</option>
 					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1249,10 +1249,10 @@
 			<span class="sheet-attribute-label"  data-i18n="roll-attribute-u">Roll</span>
 		</div>
 		<div class ="sheet-attribute-rownew">
-			<input type="checkbox" class="sheet-attribute-checkbox"name="attr_strengthfav" value="1">
-			<span class="attribute" data-i18n="strength-att-u">Strength</span>
-			<input type="number" name="attr_strength" value="1"/>
-			<button type="roll" value="/em rolls Strength with [[(@{strength} + ?{Bonuses|0} + @{wound-penalty})d10>?{Doubles?|Tens,10|Nines,9|Eights,8|Sevens,7|None,11}f<6s + (@{strength} + ?{Bonuses|0} + @{wound-penalty})+?{automatic successes|0}]] sucesses" name="roll_strengthcheck"></button>
+			<input type="checkbox" class="sheet-attribute-checkbox"name="attr_forcefav" value="1">
+			<span class="attribute" data-i18n="force-att-u">force</span>
+			<input type="number" name="attr_force" value="1"/>
+			<button type="roll" value="/em rolls Force with [[(@{force} + ?{Bonuses|0} + @{wound-penalty})d10>?{Doubles?|Tens,10|Nines,9|Eights,8|Sevens,7|None,11}f<6s + (@{force} + ?{Bonuses|0} + @{wound-penalty})+?{automatic successes|0}]] sucesses" name="roll_forcecheck"></button>
 		</div>
 		<div class ="sheet-attribute-rownew">
 			<input type="checkbox" name="attr_dexterityfav" value="1">
@@ -1320,7 +1320,7 @@
 		<span class="ability" data-i18n="arhcery-u">Archery</span>
 		<input type="number" name="attr_archery" value="0"/>
 		<select class="sheetselect" name="attr_arch_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1337,7 +1337,7 @@
 		<span class="ability" data-i18n="athletics-u">Athletics</span>
 		<input type="number" name="attr_athletics" value="0"/>
 		<select class="sheetselect" name="attr_athletics_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1354,7 +1354,7 @@
 		<span class="ability" data-i18n="awareness-u">Awareness</span>
 		<input type="number" name="attr_awareness" value="0"/>
 		<select class="sheetselect" name="attr_awareness_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1371,7 +1371,7 @@
 		<span class="ability" data-i18n="brawl-u">Brawl</span>
 		<input type="number" name="attr_brawl" value="0"/>
 		<select class="sheetselect" name="attr_brawl_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1388,7 +1388,7 @@
 		<span class="ability" data-i18n="bureaucracy-u">Bureaucracy</span>
 		<input type="number" name="attr_bureaucracy" value="0"/>
 		<select class="sheetselect" name="attr_bureaucracy_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1487,7 +1487,7 @@
 		  <option value="@{craft_10}" data-i18n="craft-10-u">CR10</option>
 		</select>
 		<select class="sheetselect" name="attr_craft_attr" style="margin-right: 1px;">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1504,7 +1504,7 @@
 		<span class="ability" data-i18n="dodge-u">Dodge</span>
 		<input type="number" name="attr_dodge" value="0"/>
 		<select class="sheetselect" name="attr_dodge_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1521,7 +1521,7 @@
 		<span class="ability" data-i18n="integrity-u">Integrity</span>
 		<input type="number" name="attr_integrity" value="0"/>
 		<select class="sheetselect" name="attr_integrity_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1538,7 +1538,7 @@
 		<span class="ability" data-i18n="investigation-u">Investigation</span>
 		<input type="number" name="attr_investigation" value="0"/>
 		<select class="sheetselect" name="attr_investigation_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1555,7 +1555,7 @@
 		<span class="ability" data-i18n="larceny-u">Larceny</span>
 		<input type="number" name="attr_larceny" value="0"/>
 		<select class="sheetselect" name="attr_larceny_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1572,7 +1572,7 @@
 		<span class="ability" data-i18n="linguistics-u">Linguistics</span>
 		<input type="number" name="attr_linguistics" value="0"/>
 		<select class="sheetselect" name="attr_linguistics_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1589,7 +1589,7 @@
 		<span class="ability" data-i18n="lore-u">Lore</span>
 		<input type="number" name="attr_lore" value="0"/>
 		<select class="sheetselect" name="attr_lore_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1688,7 +1688,7 @@
 		  <option value="@{martial_arts_10}">MA10</option>
 		</select>
 		<select class="sheetselect" name="attr_martial_arts_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1714,7 +1714,7 @@
 		<span class="ability" data-i18n="medicine-u">Medicine</span>
 		<input type="number" name="attr_medicine" value="0"/>
 		<select class="sheetselect" name="attr_medicine_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1731,7 +1731,7 @@
 		<span class="ability" data-i18n="melee-u">Melee</span>
 		<input type="number" name="attr_melee" value="0"/>
 		<select class="sheetselect" name="attr_melee_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1748,7 +1748,7 @@
 		<span class="ability" data-i18n="occult-u">Occult</span>
 		<input type="number" name="attr_occult" value="0"/>
 		<select class="sheetselect" name="attr_occult_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1765,7 +1765,7 @@
 		<span class="ability" data-i18n="performance-u">Performance</span>
 		<input type="number" name="attr_performance" value="0"/>
 		<select class="sheetselect" name="attr_performance_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1782,7 +1782,7 @@
 		<span class="ability" data-i18n="presence-u">Presence</span>
 		<input type="number" name="attr_presence" value="0"/>
 		<select class="sheetselect" name="attr_presence_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1799,7 +1799,7 @@
 		<span class="ability" data-i18n="resistance-u">Resistance</span>
 		<input type="number" name="attr_resistance" value="0"/>
 		<select class="sheetselect" name="attr_resistance_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1816,7 +1816,7 @@
 		<span class="ability" data-i18n="ride-u">Ride</span>
 		<input type="number" name="attr_ride" value="0"/>
 		<select class="sheetselect" name="attr_ride_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1833,7 +1833,7 @@
 		<span class="ability" data-i18n="sail-u">Sail</span>
 		<input type="number" name="attr_sail" value="0"/>
 		<select class="sheetselect" name="attr_sail_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1850,7 +1850,7 @@
 		<span class="ability" data-i18n="socialize-u">Socialize</span>
 		<input type="number" name="attr_socialize" value="0"/>
 		<select class="sheetselect" name="attr_socialize_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1867,7 +1867,7 @@
 		<span class="ability" data-i18n="stealth-u">Stealth</span>
 		<input type="number" name="attr_stealth" value="0"/>
 		<select class="sheetselect" name="attr_stealth_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1884,7 +1884,7 @@
 		<span class="ability" data-i18n="survival-u">Survival</span>
 		<input type="number" name="attr_survival" value="0"/>
 		<select class="sheetselect" name="attr_survival_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1901,7 +1901,7 @@
 		<span class="ability" data-i18n="thrown-u">Thrown</span>
 		<input type="number" name="attr_thrown" value="0"/>
 		<select class="sheetselect" name="attr_thrown_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -1918,7 +1918,7 @@
 		<span class="ability" data-i18n="war-u">War</span>
 		<input type="number" name="attr_war" value="0"/>
 		<select class="sheetselect" name="attr_war_attr">
-          <option value="@{strength}" data-i18n="strength-u">STR</option>
+          <option value="@{force}" data-i18n="force-u">FOR</option>
           <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -2863,7 +2863,7 @@
 				<input type="number" name="attr_repweaponov" value="0"/>
 				<input type="number" name="attr_repweaponatt" value="0"/>
 				<select class="sheetweaponselect" name="attr_weapon-attribute">
-					<option value="@{strength}" data-i18n="strength-u">STR</option>
+					<option value="@{force}" data-i18n="force-u">FOR</option>
 					<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -2888,7 +2888,7 @@
 					<option value="@{martial_arts_10}"data-i18n="martial-arts-10-u">MA10</option>
 				</select>
 				<button type="roll" value="/em rolls a withering attack using @{repweaponname}, with [[(@{weapon-attribute} + @{weapon-ability} + @{repweaponacc} + ?{Bonuses/Specialization|0} + @{wound-penalty})d10>?{Doubles?|Tens,10|Nines,9|Eights,8|Sevens,7|None,11}f<6s + (@{weapon-attribute} + @{weapon-ability} + @{repweaponacc} + ?{Bonuses/Specialization|0} + @{wound-penalty})+?{automatic successes|0}]] successes" name="roll_witheringattack"></button>
-				<button type="roll" value="/em rolls withering damage using @{repweaponname}, with [[([[{(@{strength} + @{repweapondam} - ?{Enemy Soak|0} + ?{Net Successes|0} + ?{Bonuses|0} + @{wound-penalty}), @{repweaponov}}kh1]])d10>?{Doubles?|Tens,10|Nines,9|Eights,8|Sevens,7|None,11}f<6s + ([[{(@{strength} + @{repweapondam} - ?{Enemy Soak|0} + ?{Net Successes|0} + ?{Bonuses|0} + @{wound-penalty}), @{repweaponov}}kh1]])+?{automatic successes|0}]] successes" name="roll_witheringdamage"></button>
+				<button type="roll" value="/em rolls withering damage using @{repweaponname}, with [[([[{(@{force} + @{repweapondam} - ?{Enemy Soak|0} + ?{Net Successes|0} + ?{Bonuses|0} + @{wound-penalty}), @{repweaponov}}kh1]])d10>?{Doubles?|Tens,10|Nines,9|Eights,8|Sevens,7|None,11}f<6s + ([[{(@{force} + @{repweapondam} - ?{Enemy Soak|0} + ?{Net Successes|0} + ?{Bonuses|0} + @{wound-penalty}), @{repweaponov}}kh1]])+?{automatic successes|0}]] successes" name="roll_witheringdamage"></button>
 				<button type="roll" value="/em rolls a decisive attack with [[(@{weapon-attribute} + @{weapon-ability} + ?{Bonuses/Specialization|0} + @{wound-penalty})d10>?{Doubles?|Tens,10|Nines,9|Eights,8|Sevens,7|None,11}f<6s + (@{weapon-attribute} + @{weapon-ability} + ?{Bonuses/Specialization|0} + @{wound-penalty})+?{automatic successes|0}]] successes" name="roll_decisiveattack"></button>
 				<button type="roll" value="/em rolls decisive damage with [[(?{Initiative?|0})d10>?{Doubles?|None,11|Tens,10|Nines,9|Eights,8|Sevens,7}f<6s + (?{Initiative?|0}) + ?{automatic successes|0}]] successes" name="roll_decisivedamage"></button>
 				<span style="align-self: center; font-size: 15px" data-i18n="tags-u">Tags:</span>
@@ -2918,7 +2918,7 @@
 				<input type="number" name="attr_weapon-overwhelm-ranged" value="0"/>
 				<input type="number" name="attr_weapon-attune-ranged" value="0"/>
 				<select class="sheetweaponselect" name="attr_weapon-attribute-ranged">
-					<option value="@{strength}" data-i18n="strength-u">STR</option>
+					<option value="@{force}" data-i18n="force-u">FOR</option>
 					<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -2943,7 +2943,7 @@
 					<option value="@{martial_arts_10}"data-i18n="martial-arts-10-u">MA10</option>
 				</select>
 				<button type="roll" value="/em rolls a ranged withering attack using @{weapon-name-ranged}, with [[(@{weapon-attribute-ranged} + @{weapon-ability-ranged} + @{weapon-range-ranged} + ?{Bonuses/Specialization|0} + @{wound-penalty})d10>?{Doubles?|Tens,10|Nines,9|Eights,8|Sevens,7|None,11}f<6s + (@{weapon-attribute-ranged} + @{weapon-ability-ranged} + @{weapon-range-ranged} + ?{Bonuses/Specialization|0} + @{wound-penalty})+?{automatic successes|0}]] successes" name="roll_witheringattackranged"></button>
-				<button type="roll" value="/em rolls withering damage with @{weapon-name-ranged}, with [[ ([[{((@{strength} * @{str-damage-ranged}) + @{weapon-damage-ranged} - ?{Enemy Soak|0} + ?{Net Successes|0} + ?{Bonuses|0} + @{wound-penalty}), @{weapon-overwhelm-ranged}}kh1]])d10>?{Doubles?|Tens,10|Nines,9|Eights,8|Sevens,7|None,11}f<6s + ([[{((@{strength} * @{str-damage-ranged}) + @{weapon-damage-ranged} - ?{Enemy Soak|0} + ?{Net Successes|0} + ?{Bonuses|0} + @{wound-penalty}), @{weapon-overwhelm-ranged}}kh1]])+?{automatic successes|0}]] successes" name="roll_witheringdamageranged"></button> 
+				<button type="roll" value="/em rolls withering damage with @{weapon-name-ranged}, with [[ ([[{((@{force} * @{FOR-damage-ranged}) + @{weapon-damage-ranged} - ?{Enemy Soak|0} + ?{Net Successes|0} + ?{Bonuses|0} + @{wound-penalty}), @{weapon-overwhelm-ranged}}kh1]])d10>?{Doubles?|Tens,10|Nines,9|Eights,8|Sevens,7|None,11}f<6s + ([[{((@{force} * @{FOR-damage-ranged}) + @{weapon-damage-ranged} - ?{Enemy Soak|0} + ?{Net Successes|0} + ?{Bonuses|0} + @{wound-penalty}), @{weapon-overwhelm-ranged}}kh1]])+?{automatic successes|0}]] successes" name="roll_witheringdamageranged"></button> 
 				<button type="roll" value="/em rolls a ranged decisive attack with [[(@{weapon-attribute-ranged} + @{weapon-ability-ranged} + ?{Bonuses/Specialization|0} + @{wound-penalty})d10>?{Doubles?|Tens,10|Nines,9|Eights,8|Sevens,7|None,11}f<6s + (@{weapon-attribute-ranged} + @{weapon-ability-ranged} + ?{Bonuses/Specialization|0} + @{wound-penalty})+?{automatic successes|0}]] successes" name="roll_decisiveattackranged"></button>
 				<button type="roll" value="/em rolls decisive damage with [[(?{Initiative?|0})d10>?{Doubles?|None,11|Tens,10|Nines,9|Eights,8|Sevens,7}f<6s + (?{Initiative?|0} + ?{automatic successes|0})]] successes" name="roll_decisivedamageranged"></button>
 				<select class="sheetweaponselect" name="attr_weapon-range-ranged">
@@ -2972,7 +2972,7 @@
 				<span data-i18n="medium-range-u">Medium</span>
 				<span data-i18n="long-range-u">Long</span>
 				<span data-i18n="extreme-range-u">Extreme</span>
-				<span data-i18n="strength-u">STR</span>
+				<span data-i18n="force-u">FOR</span>
 				<span class="ranged-tags" data-i18n="tags-u">Tags:</span>
 				<span class="accuracy-align" data-i18n="accuracy-u">Accuracy:</span>
 				<input type="number" class="close-acc" name="attr_weapon-acc-close" value="0"/>
@@ -2980,7 +2980,7 @@
 				<input type="number" class="medium-acc" name="attr_weapon-acc-medium" value="0"/>
 				<input type="number" class="long-acc" name="attr_weapon-acc-long" value="0"/>
 				<input type="number" class="extreme-acc" name="attr_weapon-acc-extreme" value="0"/>
-				<input type="checkbox" class="ranged-str-box" name="attr_str-damage-ranged" value="1">
+				<input type="checkbox" class="ranged-FOR-box" name="attr_FOR-damage-ranged" value="1">
 				<input class="ranged-tag-text" type="text" name="attr_weapon-tags" style="width:240px; align-self: center; justify-self: start; height: 25px" value=""/>
 			</div>
 		</fieldset>
@@ -3403,7 +3403,7 @@
 					<input type="number" name="attr_repability" value="0"/>
 					<input type="number" name="attr_repability_bonus" value="0"/>
 					<select class="sheetselect" name="attr_repability_attr">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3425,7 +3425,7 @@
 					<input type="number" name="attr_ma-snake" value="0"/>
 					<input type="number" name="attr_ma-snake-bonus" value="0"/>
 					<select class="sheetselect" name="attr_snake-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3443,7 +3443,7 @@
 					<input type="number" name="attr_ma-tiger" value="0"/>
 					<input type="number" name="attr_ma-tiger-bonus" value="0"/>
 					<select class="sheetselect" name="attr_tiger-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3461,7 +3461,7 @@
 					<input type="number" name="attr_ma-void" value="0"/>
 					<input type="number" name="attr_ma-void-bonus" value="0"/>
 					<select class="sheetselect" name="attr_void-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3479,7 +3479,7 @@
 					<input type="number" name="attr_ma-reaper" value="0"/>
 					<input type="number" name="attr_ma-reaper-bonus" value="0"/>
 					<select class="sheetselect" name="attr_reaper-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3497,7 +3497,7 @@
 					<input type="number" name="attr_ma-ebon" value="0"/>
 					<input type="number" name="attr_ma-ebon-bonus" value="0"/>
 					<select class="sheetselect" name="attr_ebon-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3515,7 +3515,7 @@
 					<input type="number" name="attr_ma-crane" value="0"/>
 					<input type="number" name="attr_ma-crane-bonus" value="0"/>
 					<select class="sheetselect" name="attr_crane-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3533,7 +3533,7 @@
 					<input type="number" name="attr_ma-nightingale" value="0"/>
 					<input type="number" name="attr_ma-nightingale-bonus" value="0"/>
 					<select class="sheetselect" name="attr_nightingale-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3551,7 +3551,7 @@
 					<input type="number" name="attr_ma-devil" value="0"/>
 					<input type="number" name="attr_ma-devil-bonus" value="0"/>
 					<select class="sheetselect" name="attr_devil-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3569,7 +3569,7 @@
 					<input type="number" name="attr_ma-claw" value="0"/>
 					<input type="number" name="attr_ma-claw-bonus" value="0"/>
 					<select class="sheetselect" name="attr_claw-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3587,7 +3587,7 @@
 					<input type="number" name="attr_ma-pearl" value="0"/>
 					<input type="number" name="attr_ma-pearl-bonus" value="0"/>
 					<select class="sheetselect" name="attr_pearl-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3605,7 +3605,7 @@
 					<input type="number" name="attr_ma-steel" value="0"/>
 					<input type="number" name="attr_ma-steel-bonus" value="0"/>
 					<select class="sheetselect" name="attr_steel-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3624,7 +3624,7 @@
 						<input type="number" name="attr_repmartialarts" value="0"/>
 						<input type="number" name="attr_repmartialarts-bonus" value="0"/>
 						<select class="sheetselect" name="attr_repmartialarts-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3723,7 +3723,7 @@
 					<input type="number" name="attr_craft-armoring" value="0"/>
 					<input type="number" name="attr_craft-armoring-bonus" value="0"/>
 					<select class="sheetselect" name="attr_craft-armoring-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3741,7 +3741,7 @@
 					<input type="number" name="attr_craft-artifact" value="0"/>
 					<input type="number" name="attr_ma-craft-artifact-bonus" value="0"/>
 					<select class="sheetselect" name="attr_craft-artifact-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3759,7 +3759,7 @@
 					<input type="number" name="attr_craft-cooking" value="0"/>
 					<input type="number" name="attr_craft-cooking-bonus" value="0"/>
 					<select class="sheetselect" name="attr_craft-cooking-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3777,7 +3777,7 @@
 					<input type="number" name="attr_craft-artifice" value="0"/>
 					<input type="number" name="attr_craft-artifice-bonus" value="0"/>
 					<select class="sheetselect" name="attr_craft-artifice-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3795,7 +3795,7 @@
 					<input type="number" name="attr_craft-gemcutting" value="0"/>
 					<input type="number" name="attr_craft-gemcutting-bonus" value="0"/>
 					<select class="sheetselect" name="attr_craft-gemcutting-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3813,7 +3813,7 @@
 					<input type="number" name="attr_craft-geomancy" value="0"/>
 					<input type="number" name="attr_craft-geomancy-bonus" value="0"/>
 					<select class="sheetselect" name="attr_craft-geomancy-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3831,7 +3831,7 @@
 					<input type="number" name="attr_craft-jewelry" value="0"/>
 					<input type="number" name="attr_craft-jewelry-bonus" value="0"/>
 					<select class="sheetselect" name="attr_craft-jewelry-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3849,7 +3849,7 @@
 					<input type="number" name="attr_craft-tailoring" value="0"/>
 					<input type="number" name="attr_craft-tailoring-bonus" value="0"/>
 					<select class="sheetselect" name="attr_craft-tailoring-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3867,7 +3867,7 @@
 					<input type="number" name="attr_craft-forging" value="0"/>
 					<input type="number" name="attr_craft-forging-bonus" value="0"/>
 					<select class="sheetselect" name="attr_craft-forging-ability-select">
-						<option value="@{strength}" data-i18n="strength-u">STR</option>
+						<option value="@{force}" data-i18n="force-u">FOR</option>
 						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -3886,7 +3886,7 @@
 						<input type="number" name="attr_repcrafts" value="0"/>
 						<input type="number" name="attr_repcrafts-bonus" value="0"/>
 						<select class="sheetselect" name="attr_repcrafts-ability-select">
-							<option value="@{strength}" data-i18n="strength-u">STR</option>
+							<option value="@{force}" data-i18n="force-u">FOR</option>
 							<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 							<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 							<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
@@ -4031,7 +4031,7 @@
 // Contact:  https://app.roll20.net/users/104025/the-aaron
 // Minified with http://jscompress.com/
 function initTAS() {
-TAS=TAS||function(){"use strict";var e="0.2.4",n=1457098091,t={debug:{key:"debug",title:"DEBUG",color:{bgLabel:"#7732A2",label:"#F2EF40",bgText:"#FFFEB7",text:"#7732A2"}},error:{key:"error",title:"Error",color:{bgLabel:"#C11713",label:"white",bgText:"#C11713",text:"white"}},warn:{key:"warn",title:"Warning",color:{bgLabel:"#F29140",label:"white",bgText:"#FFD8B7",text:"black"}},info:{key:"info",title:"Info",color:{bgLabel:"#413FA9",label:"white",bgText:"#B3B2EB",text:"black"}},notice:{key:"notice",title:"Notice",color:{bgLabel:"#33C133",label:"white",bgText:"#ADF1AD",text:"black"}},log:{key:"log",title:"Log",color:{bgLabel:"#f2f240",label:"black",bgText:"#ffff90",text:"black"}},callstack:{key:"TAS",title:"function",color:{bgLabel:"#413FA9",label:"white",bgText:"#B3B2EB",text:"black"}},callstack_async:{key:"TAS",title:"ASYNC CALL",color:{bgLabel:"#413FA9",label:"white",bgText:"#413FA9",text:"white"}},TAS:{key:"TAS",title:"TAS",color:{bgLabel:"grey",label:"black;background:linear-gradient(#304352,#d7d2cc,#d7d2cc,#d7d2cc,#304352)",bgText:"grey",text:"black;background:linear-gradient(#304352,#d7d2cc,#d7d2cc,#d7d2cc,#304352)"}}},o={debugMode:!1,logging:{log:!0,notice:!0,info:!0,warn:!0,error:!0,debug:!1}},r=[],c={},a=function(e){switch(typeof e){case"string":return"string";case"boolean":return"boolean";case"number":return _.isNaN(e)?"NaN":e.toString().match(/\./)?"decimal":"integer";case"function":return"function: "+(e.name?e.name+"()":"(anonymous)");case"object":return _.isArray(e)?"array":_.isArguments(e)?"arguments":_.isNull(e)?"null":"object";default:return typeof e}},i=function(e,n,t){_.each(t,function(t){var o=a(t);switch(o){case"string":e(t);break;case"undefined":case"null":case"NaN":e("["+o+"]");break;case"number":case"not a number":case"integer":case"decimal":case"boolean":e("["+o+"]: "+t);break;default:e("["+o+"]:========================================="),n(t),e("=========================================================")}})},u=function(e){var n,t=e.key,r=e.title||"TAS",c=e.color&&e.color.bgLabel||"blue",a=e.color&&e.color.label||"white",u=e.color&&e.color.bgText||"blue",l=e.color&&e.color.text||"white";return n=function(e){console.log("%c "+r+": %c "+e+" ","background-color: "+c+";color: "+a+"; font-weight:bold;","background-color: "+u+";color: "+l+";")},function(){("TAS"===t||o.logging[t])&&i(n,function(e){console.log(e)},_.toArray(arguments))}},l=u(t.debug),f=u(t.error),g=u(t.warn),b=u(t.info),s=u(t.notice),d=u(t.log),p=u(t.TAS),h=u(t.callstack),m=u(t.callstack_async),y=function(e,n){var t=_.findIndex(r,function(t){return _.difference(t.stack,e).length===_.difference(e,t.stack).length&&0===_.difference(t.stack,e).length&&t.label===n});return-1===t&&(t=r.length,r.push({stack:e,label:n})),t},k=function(e){var n=_.defaults(e,o);n.logging=_.defaults(e&&e.logging||{},o.logging),o=n},x=function(){o.logging.debug=!0,o.debugMode=!0},A=function(){var e=new Error("dummy"),n=_.map(_.rest(e.stack.replace(/^[^\(]+?[\n$]/gm,"").replace(/^\s+at\s+/gm,"").replace(/^Object.<anonymous>\s*\(/gm,"{anonymous}()@").split("\n")),function(e){return e.replace(/\s+.*$/,"")});return n},w=function(e){var n,t;_.find(e,function(e){return(n=e.match(/TAS_CALLSTACK_(\d+)/))?(t=r[n[1]],m("===================="+(t.label?"> "+t.label+" <":"")+"===================="),w(t.stack),!0):(h(e),!1)})},F=function(){var e;o.debugMode&&(e=A(),e.shift(),p("==============================> CALLSTACK <=============================="),w(e),p("========================================================================="))},S=function(e,n,t){var r;return"function"==typeof e&&(t=n,n=e,e=void 0),o.debugMode?(r=A(),r.shift(),function(e,n,t,o){var r=y(t,o);return new Function("cb","ctx","TASlog","return function TAS_CALLSTACK_"+r+"(){TASlog('Entering: '+(cb.name||'(anonymous function)'));cb.apply(ctx||{},arguments);TASlog('Exiting: '+(cb.name||'(anonymous function)'));};")(e,n,p)}(n,t,r,e)):function(e,n){return function(){e.apply(n||{},arguments)}}(n,t)},T=function(e,n){c[e]=n},v=function(){setAttrs(c),c={}},L=function(e,n){return _.chain(e).reduce(function(n,t){return"string"==typeof t?n.push(t):(_.isArray(e)||_.isArguments(e))&&(n=L(t,n)),n},_.isArray(n)&&n||[]).uniq().value()},j=function(e,n){Object.defineProperty(e,"id",{value:n,writeable:!1,enumerable:!1})},C=function(e,n,t,o){!function(){var r=_.contains(["S","F","I","D"],n)?"_"+n:n,c=o||n,a=t;_.each(["S","I","F"],function(n){_.has(e,n)||Object.defineProperty(e,n,{value:{},enumerable:!1,readonly:!0})}),_.has(e,"D")||Object.defineProperty(e,"D",{value:_.reduce(_.range(10),function(e,n){return Object.defineProperty(e,n,{value:{},enumerable:!0,readonly:!0}),e},{}),enumerable:!1,readonly:!0}),Object.defineProperty(e,r,{enumerable:!0,set:function(e){e!==a&&(a=e,T(c,e))},get:function(){return a}}),Object.defineProperty(e.S,r,{enumerable:!0,set:function(e){var n=e.toString();n!==a&&(a=n,T(c,n))},get:function(){return a.toString()}}),Object.defineProperty(e.I,r,{enumerable:!0,set:function(e){var n=parseInt(e,10)||0;n!==a&&(a=n,T(c,n))},get:function(){return parseInt(a,10)||0}}),Object.defineProperty(e.F,r,{enumerable:!0,set:function(e){var n=parseFloat(e)||0;n!==a&&(a=n,T(c,n))},get:function(){return parseFloat(a)||0}}),_.each(_.range(10),function(n){Object.defineProperty(e.D[n],r,{enumerable:!0,set:function(e){var t=(parseFloat(e)||0).toFixed(n);t!==a&&(a=t,T(c,t))},get:function(){return(parseFloat(a)||0).toFixed(n)}})})}()},O=function(e){return function(e){var n=e,t=[],o=[],r=[],c=[],a=function(){return t=L(arguments,t),this},i=function(){return o=L(arguments,o),this},u=function(e,n,t,o){return r.push({type:"reduce",func:e&&_.isFunction(e)&&e||_.noop,memo:_.isUndefined(n)&&0||n,"final":t&&_.isFunction(t)&&t||_.noop,context:o||{}}),this},l=function(e,n,t){return r.push({type:"map",func:e&&_.isFunction(e)&&e||_.noop,"final":n&&_.isFunction(n)&&n||_.noop,context:t||{}}),this},f=function(e,n,t){return r.push({type:"each",func:e&&_.isFunction(e)&&e||_.noop,"final":n&&_.isFunction(n)&&n||_.noop,context:t||{}}),this},g=function(e,n){return r.push({type:"tap","final":e&&_.isFunction(e)&&e||_.noop,context:n||{}}),this},b=function(e,n){return c.push({callback:e&&_.isFunction(e)&&e||_.noop,context:n||{}}),this},s=function(e,a){var i={},u={},l=[],f=[];b(e,a),getSectionIDs("repeating_"+n,function(e){l=e,f=_.reduce(l,function(e,t){return e.concat(_.map(o,function(e){return"repeating_"+n+"_"+t+"_"+e}))},[]),getAttrs(_.uniq(t.concat(f)),function(e){_.each(t,function(n){e.hasOwnProperty(n)&&C(u,n,e[n])}),i=_.reduce(l,function(t,r){var c={};return j(c,r),_.each(o,function(t){var o="repeating_"+n+"_"+r+"_"+t;C(c,t,e[o],o)}),t[r]=c,t},{}),_.each(r,function(e){var n;switch(e.type){case"tap":_.bind(e["final"],e.context,i,u)();break;case"each":_.each(i,function(n){_.bind(e.func,e.context,n,u,n.id,i)()}),_.bind(e["final"],e.context,i,u)();break;case"map":n=_.map(i,function(n){return _.bind(e.func,e.context,n,u,n.id,i)()}),_.bind(e["final"],e.context,n,i,u)();break;case"reduce":n=e.memo,_.each(i,function(t){n=_.bind(e.func,e.context,n,t,u,t.id,i)()}),_.bind(e["final"],e.context,n,i,u)()}}),v(),_.each(c,function(e){_.bind(e.callback,e.context)()})})})};return{attrs:a,attr:a,column:i,columns:i,field:i,fields:i,reduce:u,inject:u,foldl:u,map:l,collect:l,each:f,forEach:f,tap:g,"do":g,after:b,last:b,done:b,execute:s,go:s,run:s}}(e)},D=function(e,n,t){O(e).attr(t).field(n).reduce(function(e,t){return e+t.F[n]},0,function(e,n,o){o.S[t]=e}).execute()};return console.log("%c?.??.?*??`*?.??.?*??`*?.?  The Aaron Sheet  v"+e+"  ?.?*??`*?.??.?*??`*?.??.?","background: linear-gradient(to right,green,white,white,green); color:black;text-shadow: 0 0 8px white;"),console.log("%c?.??.?*??`*?.??.?*??`*?.?  Last update: "+new Date(1e3*n)+"  ?.?*??`*?.??.?*??`*?.??.?","background: linear-gradient(to right,green,white,white,green); color:black;text-shadow: 0 0 8px white;"),{repeatingSimpleSum:D,repeating:O,config:k,callback:S,callstack:F,debugMode:x,_fn:S,debug:l,error:f,warn:g,info:b,notice:s,log:d}}();
+TAS=TAS||function(){"use FORict";var e="0.2.4",n=1457098091,t={debug:{key:"debug",title:"DEBUG",color:{bgLabel:"#7732A2",label:"#F2EF40",bgText:"#FFFEB7",text:"#7732A2"}},error:{key:"error",title:"Error",color:{bgLabel:"#C11713",label:"white",bgText:"#C11713",text:"white"}},warn:{key:"warn",title:"Warning",color:{bgLabel:"#F29140",label:"white",bgText:"#FFD8B7",text:"black"}},info:{key:"info",title:"Info",color:{bgLabel:"#413FA9",label:"white",bgText:"#B3B2EB",text:"black"}},notice:{key:"notice",title:"Notice",color:{bgLabel:"#33C133",label:"white",bgText:"#ADF1AD",text:"black"}},log:{key:"log",title:"Log",color:{bgLabel:"#f2f240",label:"black",bgText:"#ffff90",text:"black"}},callstack:{key:"TAS",title:"function",color:{bgLabel:"#413FA9",label:"white",bgText:"#B3B2EB",text:"black"}},callstack_async:{key:"TAS",title:"ASYNC CALL",color:{bgLabel:"#413FA9",label:"white",bgText:"#413FA9",text:"white"}},TAS:{key:"TAS",title:"TAS",color:{bgLabel:"grey",label:"black;background:linear-gradient(#304352,#d7d2cc,#d7d2cc,#d7d2cc,#304352)",bgText:"grey",text:"black;background:linear-gradient(#304352,#d7d2cc,#d7d2cc,#d7d2cc,#304352)"}}},o={debugMode:!1,logging:{log:!0,notice:!0,info:!0,warn:!0,error:!0,debug:!1}},r=[],c={},a=function(e){switch(typeof e){case"FORing":return"FORing";case"boolean":return"boolean";case"number":return _.isNaN(e)?"NaN":e.toFORing().match(/\./)?"decimal":"integer";case"function":return"function: "+(e.name?e.name+"()":"(anonymous)");case"object":return _.isArray(e)?"array":_.isArguments(e)?"arguments":_.isNull(e)?"null":"object";default:return typeof e}},i=function(e,n,t){_.each(t,function(t){var o=a(t);switch(o){case"FORing":e(t);break;case"undefined":case"null":case"NaN":e("["+o+"]");break;case"number":case"not a number":case"integer":case"decimal":case"boolean":e("["+o+"]: "+t);break;default:e("["+o+"]:========================================="),n(t),e("=========================================================")}})},u=function(e){var n,t=e.key,r=e.title||"TAS",c=e.color&&e.color.bgLabel||"blue",a=e.color&&e.color.label||"white",u=e.color&&e.color.bgText||"blue",l=e.color&&e.color.text||"white";return n=function(e){console.log("%c "+r+": %c "+e+" ","background-color: "+c+";color: "+a+"; font-weight:bold;","background-color: "+u+";color: "+l+";")},function(){("TAS"===t||o.logging[t])&&i(n,function(e){console.log(e)},_.toArray(arguments))}},l=u(t.debug),f=u(t.error),g=u(t.warn),b=u(t.info),s=u(t.notice),d=u(t.log),p=u(t.TAS),h=u(t.callstack),m=u(t.callstack_async),y=function(e,n){var t=_.findIndex(r,function(t){return _.difference(t.stack,e).length===_.difference(e,t.stack).length&&0===_.difference(t.stack,e).length&&t.label===n});return-1===t&&(t=r.length,r.push({stack:e,label:n})),t},k=function(e){var n=_.defaults(e,o);n.logging=_.defaults(e&&e.logging||{},o.logging),o=n},x=function(){o.logging.debug=!0,o.debugMode=!0},A=function(){var e=new Error("dummy"),n=_.map(_.rest(e.stack.replace(/^[^\(]+?[\n$]/gm,"").replace(/^\s+at\s+/gm,"").replace(/^Object.<anonymous>\s*\(/gm,"{anonymous}()@").split("\n")),function(e){return e.replace(/\s+.*$/,"")});return n},w=function(e){var n,t;_.find(e,function(e){return(n=e.match(/TAS_CALLSTACK_(\d+)/))?(t=r[n[1]],m("===================="+(t.label?"> "+t.label+" <":"")+"===================="),w(t.stack),!0):(h(e),!1)})},F=function(){var e;o.debugMode&&(e=A(),e.shift(),p("==============================> CALLSTACK <=============================="),w(e),p("========================================================================="))},S=function(e,n,t){var r;return"function"==typeof e&&(t=n,n=e,e=void 0),o.debugMode?(r=A(),r.shift(),function(e,n,t,o){var r=y(t,o);return new Function("cb","ctx","TASlog","return function TAS_CALLSTACK_"+r+"(){TASlog('Entering: '+(cb.name||'(anonymous function)'));cb.apply(ctx||{},arguments);TASlog('Exiting: '+(cb.name||'(anonymous function)'));};")(e,n,p)}(n,t,r,e)):function(e,n){return function(){e.apply(n||{},arguments)}}(n,t)},T=function(e,n){c[e]=n},v=function(){setAttrs(c),c={}},L=function(e,n){return _.chain(e).reduce(function(n,t){return"FORing"==typeof t?n.push(t):(_.isArray(e)||_.isArguments(e))&&(n=L(t,n)),n},_.isArray(n)&&n||[]).uniq().value()},j=function(e,n){Object.defineProperty(e,"id",{value:n,writeable:!1,enumerable:!1})},C=function(e,n,t,o){!function(){var r=_.contains(["S","F","I","D"],n)?"_"+n:n,c=o||n,a=t;_.each(["S","I","F"],function(n){_.has(e,n)||Object.defineProperty(e,n,{value:{},enumerable:!1,readonly:!0})}),_.has(e,"D")||Object.defineProperty(e,"D",{value:_.reduce(_.range(10),function(e,n){return Object.defineProperty(e,n,{value:{},enumerable:!0,readonly:!0}),e},{}),enumerable:!1,readonly:!0}),Object.defineProperty(e,r,{enumerable:!0,set:function(e){e!==a&&(a=e,T(c,e))},get:function(){return a}}),Object.defineProperty(e.S,r,{enumerable:!0,set:function(e){var n=e.toFORing();n!==a&&(a=n,T(c,n))},get:function(){return a.toFORing()}}),Object.defineProperty(e.I,r,{enumerable:!0,set:function(e){var n=parseInt(e,10)||0;n!==a&&(a=n,T(c,n))},get:function(){return parseInt(a,10)||0}}),Object.defineProperty(e.F,r,{enumerable:!0,set:function(e){var n=parseFloat(e)||0;n!==a&&(a=n,T(c,n))},get:function(){return parseFloat(a)||0}}),_.each(_.range(10),function(n){Object.defineProperty(e.D[n],r,{enumerable:!0,set:function(e){var t=(parseFloat(e)||0).toFixed(n);t!==a&&(a=t,T(c,t))},get:function(){return(parseFloat(a)||0).toFixed(n)}})})}()},O=function(e){return function(e){var n=e,t=[],o=[],r=[],c=[],a=function(){return t=L(arguments,t),this},i=function(){return o=L(arguments,o),this},u=function(e,n,t,o){return r.push({type:"reduce",func:e&&_.isFunction(e)&&e||_.noop,memo:_.isUndefined(n)&&0||n,"final":t&&_.isFunction(t)&&t||_.noop,context:o||{}}),this},l=function(e,n,t){return r.push({type:"map",func:e&&_.isFunction(e)&&e||_.noop,"final":n&&_.isFunction(n)&&n||_.noop,context:t||{}}),this},f=function(e,n,t){return r.push({type:"each",func:e&&_.isFunction(e)&&e||_.noop,"final":n&&_.isFunction(n)&&n||_.noop,context:t||{}}),this},g=function(e,n){return r.push({type:"tap","final":e&&_.isFunction(e)&&e||_.noop,context:n||{}}),this},b=function(e,n){return c.push({callback:e&&_.isFunction(e)&&e||_.noop,context:n||{}}),this},s=function(e,a){var i={},u={},l=[],f=[];b(e,a),getSectionIDs("repeating_"+n,function(e){l=e,f=_.reduce(l,function(e,t){return e.concat(_.map(o,function(e){return"repeating_"+n+"_"+t+"_"+e}))},[]),getAttrs(_.uniq(t.concat(f)),function(e){_.each(t,function(n){e.hasOwnProperty(n)&&C(u,n,e[n])}),i=_.reduce(l,function(t,r){var c={};return j(c,r),_.each(o,function(t){var o="repeating_"+n+"_"+r+"_"+t;C(c,t,e[o],o)}),t[r]=c,t},{}),_.each(r,function(e){var n;switch(e.type){case"tap":_.bind(e["final"],e.context,i,u)();break;case"each":_.each(i,function(n){_.bind(e.func,e.context,n,u,n.id,i)()}),_.bind(e["final"],e.context,i,u)();break;case"map":n=_.map(i,function(n){return _.bind(e.func,e.context,n,u,n.id,i)()}),_.bind(e["final"],e.context,n,i,u)();break;case"reduce":n=e.memo,_.each(i,function(t){n=_.bind(e.func,e.context,n,t,u,t.id,i)()}),_.bind(e["final"],e.context,n,i,u)()}}),v(),_.each(c,function(e){_.bind(e.callback,e.context)()})})})};return{attrs:a,attr:a,column:i,columns:i,field:i,fields:i,reduce:u,inject:u,foldl:u,map:l,collect:l,each:f,forEach:f,tap:g,"do":g,after:b,last:b,done:b,execute:s,go:s,run:s}}(e)},D=function(e,n,t){O(e).attr(t).field(n).reduce(function(e,t){return e+t.F[n]},0,function(e,n,o){o.S[t]=e}).execute()};return console.log("%c?.??.?*??`*?.??.?*??`*?.?  The Aaron Sheet  v"+e+"  ?.?*??`*?.??.?*??`*?.??.?","background: linear-gradient(to right,green,white,white,green); color:black;text-shadow: 0 0 8px white;"),console.log("%c?.??.?*??`*?.??.?*??`*?.?  Last update: "+new Date(1e3*n)+"  ?.?*??`*?.??.?*??`*?.??.?","background: linear-gradient(to right,green,white,white,green); color:black;text-shadow: 0 0 8px white;"),{repeatingSimpleSum:D,repeating:O,config:k,callback:S,callstack:F,debugMode:x,_fn:S,debug:l,error:f,warn:g,info:b,notice:s,log:d}}();
 }
 
 var version = 2.2,
