@@ -69,20 +69,7 @@
 					<input class="radiobox" type="radio" name="attr_force" value="5" style="border-radius: 50%;">
 				</div>
 				<button type="roll" value="/em rolls Frorce with [[(@{force} + ?{Bonuses|0} + @{wound-penalty})d10>?{Doubles?|Tens,10|Nines,9|Eights,8|Sevens,7|None,11}f<6s + (@{force} + ?{Bonuses|0} + @{wound-penalty})+?{automatic successes|0}]] sucesses" name="roll_forcecheck"></button>
-			</div>
-			<div class ="sheet-dots-attribute-rownew">
-				<input type="checkbox" name="attr_dexterityfav" value="1">
-				<span class="dotattribute" data-i18n="dexterity-att-u">Dexterity</span>
-				<div class="radiocontainer">
-					<input class="radiobox reset" type="radio" name="attr_dexterity" value="0" style="border-radius: 50%;">
-					<input checked="checked" class="radiobox" type="radio" name="attr_dexterity" value="1" style="border-radius: 50%;">
-					<input class="radiobox" type="radio" name="attr_dexterity" value="2" style="border-radius: 50%;">
-					<input class="radiobox" type="radio" name="attr_dexterity" value="3" style="border-radius: 50%;">
-					<input class="radiobox" type="radio" name="attr_dexterity" value="4" style="border-radius: 50%;">
-					<input class="radiobox" type="radio" name="attr_dexterity" value="5" style="border-radius: 50%;">
-				</div>
-				<button type="roll" value="/em rolls Dexterity with [[(@{dexterity} + ?{Bonuses|0} + @{wound-penalty})d10>?{Doubles?|Tens,10|Nines,9|Eights,8|Sevens,7|None,11}f<6s + (@{dexterity} + ?{Bonuses|0} + @{wound-penalty})+?{automatic successes|0}]] sucesses" name="roll_dexteritycheck"></button>
-
+			
 			</div>
 			<div class ="sheet-dots-attribute-rownew">
 				<input type="checkbox" name="attr_staminafav" value="1">
@@ -198,7 +185,6 @@
 					</div>
 					<select class="sheetselect" name="attr_arch_attr">
 						<option value="@{force}" data-i18n="force-u">FOR</option>
-						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 						<option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -223,7 +209,6 @@
 					</div>
 					<select class="sheetselect" name="attr_athletics_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -248,7 +233,6 @@
 					</div>
 					<select class="sheetselect" name="attr_awareness_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -273,7 +257,6 @@
 					</div>
 					<select class="sheetselect" name="attr_Close-Combat_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -298,7 +281,6 @@
 					</div>
 					<select class="sheetselect" name="attr_bureaucracy_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -477,7 +459,6 @@
 					</select>
 					<select class="sheetselect" name="attr_craft_attr" style="margin-right: 1px;">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -502,7 +483,6 @@
 					</div>
 					<select class="sheetselect" name="attr_dodge_attr">
 					 <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -527,7 +507,6 @@
 					</div>
 					<select class="sheetselect" name="attr_integrity_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -551,7 +530,6 @@
 					</div>
 					<select class="sheetselect" name="attr_investigation_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -578,7 +556,6 @@
 					</div>
 					<select class="sheetselect" name="attr_larceny_attr">
 						<option value="@{force}" data-i18n="force-u">FOR</option>
-						<option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 						<option value="@{stamina}"data-i18n="stamina-u">STA</option>
 						<option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 						<option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -602,7 +579,6 @@
 					</div>
 					<select class="sheetselect" name="attr_linguistics_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -627,7 +603,6 @@
 					</div>
 					<select class="sheetselect" name="attr_lore_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -807,7 +782,6 @@
 					</select>
 					<select class="sheetselect" name="attr_martial_arts_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -832,7 +806,6 @@
 					</div>
 					<select class="sheetselect" name="attr_medicine_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -857,7 +830,6 @@
 					</div>
 					<select class="sheetselect" name="attr_melee_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -882,7 +854,6 @@
 					</div>
 					<select class="sheetselect" name="attr_occult_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -907,7 +878,6 @@
 					</div>
 					<select class="sheetselect" name="attr_performance_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -932,7 +902,6 @@
 					</div>
 					<select class="sheetselect" name="attr_presence_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -959,7 +928,6 @@
 					</div>
 					<select class="sheetselect" name="attr_resistance_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -984,7 +952,6 @@
 					</div>
 					<select class="sheetselect" name="attr_ride_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1009,7 +976,6 @@
 					</div>
 					<select class="sheetselect" name="attr_sail_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1034,7 +1000,6 @@
 					</div>
 					<select class="sheetselect" name="attr_socialize_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1059,7 +1024,6 @@
 					</div>
 					<select class="sheetselect" name="attr_stealth_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1084,7 +1048,6 @@
 					</div>
 					<select class="sheetselect" name="attr_survival_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1109,7 +1072,6 @@
 					</div>
 					<select class="sheetselect" name="attr_thrown_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1133,7 +1095,6 @@
 					</div>
 					<select class="sheetselect" name="attr_war_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1158,7 +1119,6 @@
 					</div>
 					<select class="sheetselect" name="attr_extra_attr">
 					  <option value="@{force}" data-i18n="force-u">FOR</option>
-					  <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
 					  <option value="@{stamina}"data-i18n="stamina-u">STA</option>
 					  <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
 					  <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1254,13 +1214,6 @@
 			<input type="number" name="attr_force" value="1"/>
 			<button type="roll" value="/em rolls Force with [[(@{force} + ?{Bonuses|0} + @{wound-penalty})d10>?{Doubles?|Tens,10|Nines,9|Eights,8|Sevens,7|None,11}f<6s + (@{force} + ?{Bonuses|0} + @{wound-penalty})+?{automatic successes|0}]] sucesses" name="roll_forcecheck"></button>
 		</div>
-		<div class ="sheet-attribute-rownew">
-			<input type="checkbox" name="attr_dexterityfav" value="1">
-			<span class="attribute" data-i18n="dexterity-att-u">Dexterity</span>
-			<input type="number" name="attr_dexterity" value="1"/>
-			<button type="roll" value="/em rolls Dexterity with [[(@{dexterity} + ?{Bonuses|0} + @{wound-penalty})d10>?{Doubles?|Tens,10|Nines,9|Eights,8|Sevens,7|None,11}f<6s + (@{dexterity} + ?{Bonuses|0} + @{wound-penalty})+?{automatic successes|0}]] sucesses" name="roll_dexteritycheck"></button>
-
-		</div>
 		<div class ="sheet-attribute-rownew2">
 			<input type="checkbox" name="attr_staminafav" value="1">
 			<span class="attribute" data-i18n="stamina-att-u">Stamina</span>
@@ -1321,7 +1274,6 @@
 		<input type="number" name="attr_archery" value="0"/>
 		<select class="sheetselect" name="attr_arch_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1338,7 +1290,6 @@
 		<input type="number" name="attr_athletics" value="0"/>
 		<select class="sheetselect" name="attr_athletics_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1355,7 +1306,6 @@
 		<input type="number" name="attr_awareness" value="0"/>
 		<select class="sheetselect" name="attr_awareness_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1372,7 +1322,6 @@
 		<input type="number" name="attr_brawl" value="0"/>
 		<select class="sheetselect" name="attr_brawl_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1389,7 +1338,6 @@
 		<input type="number" name="attr_bureaucracy" value="0"/>
 		<select class="sheetselect" name="attr_bureaucracy_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1488,7 +1436,6 @@
 		</select>
 		<select class="sheetselect" name="attr_craft_attr" style="margin-right: 1px;">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1505,7 +1452,6 @@
 		<input type="number" name="attr_dodge" value="0"/>
 		<select class="sheetselect" name="attr_dodge_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1522,7 +1468,6 @@
 		<input type="number" name="attr_integrity" value="0"/>
 		<select class="sheetselect" name="attr_integrity_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1539,7 +1484,6 @@
 		<input type="number" name="attr_investigation" value="0"/>
 		<select class="sheetselect" name="attr_investigation_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1556,7 +1500,6 @@
 		<input type="number" name="attr_larceny" value="0"/>
 		<select class="sheetselect" name="attr_larceny_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1573,7 +1516,6 @@
 		<input type="number" name="attr_linguistics" value="0"/>
 		<select class="sheetselect" name="attr_linguistics_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1590,7 +1532,6 @@
 		<input type="number" name="attr_lore" value="0"/>
 		<select class="sheetselect" name="attr_lore_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1689,7 +1630,6 @@
 		</select>
 		<select class="sheetselect" name="attr_martial_arts_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1715,7 +1655,6 @@
 		<input type="number" name="attr_medicine" value="0"/>
 		<select class="sheetselect" name="attr_medicine_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1732,7 +1671,6 @@
 		<input type="number" name="attr_melee" value="0"/>
 		<select class="sheetselect" name="attr_melee_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1749,7 +1687,6 @@
 		<input type="number" name="attr_occult" value="0"/>
 		<select class="sheetselect" name="attr_occult_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1766,7 +1703,6 @@
 		<input type="number" name="attr_performance" value="0"/>
 		<select class="sheetselect" name="attr_performance_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1783,7 +1719,6 @@
 		<input type="number" name="attr_presence" value="0"/>
 		<select class="sheetselect" name="attr_presence_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1800,7 +1735,6 @@
 		<input type="number" name="attr_resistance" value="0"/>
 		<select class="sheetselect" name="attr_resistance_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1817,7 +1751,6 @@
 		<input type="number" name="attr_ride" value="0"/>
 		<select class="sheetselect" name="attr_ride_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1834,7 +1767,6 @@
 		<input type="number" name="attr_sail" value="0"/>
 		<select class="sheetselect" name="attr_sail_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1851,7 +1783,6 @@
 		<input type="number" name="attr_socialize" value="0"/>
 		<select class="sheetselect" name="attr_socialize_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1868,8 +1799,7 @@
 		<input type="number" name="attr_stealth" value="0"/>
 		<select class="sheetselect" name="attr_stealth_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
-          <option value="@{stamina}"data-i18n="stamina-u">STA</option>
+         <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
           <option value="@{appearance}"data-i18n="appearance-u">APP</option>
@@ -1885,7 +1815,6 @@
 		<input type="number" name="attr_survival" value="0"/>
 		<select class="sheetselect" name="attr_survival_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1902,7 +1831,6 @@
 		<input type="number" name="attr_thrown" value="0"/>
 		<select class="sheetselect" name="attr_thrown_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
@@ -1919,7 +1847,6 @@
 		<input type="number" name="attr_war" value="0"/>
 		<select class="sheetselect" name="attr_war_attr">
           <option value="@{force}" data-i18n="force-u">FOR</option>
-          <option value="@{dexterity}" selected="selected"data-i18n="dexterity-u">DEX</option>
           <option value="@{stamina}"data-i18n="stamina-u">STA</option>
           <option value="@{charisma}"data-i18n="charisma-u">CHA</option>
           <option value="@{manipulation}"data-i18n="manipulation-u">MAN</option>
